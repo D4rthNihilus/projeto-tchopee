@@ -70,7 +70,7 @@ header > div#src > div#srcicon > svg{
 
 header > div#src > input#srcbar {
     background-color: #FFCB69;
-    width: 380px;
+    width: 300px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
@@ -98,6 +98,7 @@ nav > a {
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
+    font-size: 0.8em;
 }
 
 nav > a:hover {
