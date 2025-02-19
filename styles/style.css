@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Paleta de Cores:
+
+amarelo claro = #FFCB69
+amarelo médio = #FFA200
+amarelo escuro = #FA9511
+
+
+*/
+
+header {
+    background-image: linear-gradient(45deg, #FFCB69, #FFA200, #FA9511);
+    color: white;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header > h1 {
+    padding-right: 20%;
+    font-family: "Signika", serif;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+header > div#logo > img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+header > div#src {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+header > div#src > div#srcicon {
+    background-color: #FFCB69;
+    height: 25px;
+    padding: 0px 5px 0px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: grid;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-style: italic;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.178);
+}
+
+header > div#src > div#srcicon > svg{
+    align-self: center;
+}
+
+header > div#src > input#srcbar {
+    background-color: #FFCB69;
+    width: 380px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+header > div#src > input#srcbar:active {
+    border: none;
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+    background-color: #FA9511;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+    padding: 5px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav > a:hover {
+    background-color: #FFCB69;
+}
