@@ -118,17 +118,19 @@ main > section {
 
 main > section > div#produto, div#anuncio {
     margin: 40px 0px;
-    width: 150px;
+    width: 170px;
     height: 220px;
     background-color: lightblue;
+    border-radius: 10px 10px 0px 0px;
 
 }
 
 main > section > div#produto > div {
     height: 180px;
-    width: 130px;
+    width: 150px;
     background-color: rgb(6, 80, 80);
     margin: 20px auto;
+    margin-bottom: 10px;
 }
 
 main > section > div#produto > p {
@@ -136,6 +138,10 @@ main > section > div#produto > p {
     padding: 5px;
     background-color: rgb(4, 53, 53);
     color: white;
+}
+
+main > section > div#produto > p#preco {
+    border-radius: 0px 0px 10px 10px;
 }
 
 footer {
