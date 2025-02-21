@@ -117,15 +117,16 @@ main > section {
 }
 
 main > section > div#produto, div#anuncio {
-    margin: 10px;
-    width: 250px;
-    height: 300px;
+    margin: 40px 10px;
+    width: 150px;
+    height: 200px;
     background-color: lightblue;
+
 }
 
 main > section > div#produto > div {
-    height: 210px;
-    width: 210px;
+    height: 150px;
+    width: 110px;
     background-color: rgb(6, 80, 80);
     margin: 20px auto;
 }
