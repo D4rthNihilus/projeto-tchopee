@@ -118,7 +118,7 @@ main > section {
 
 main > section > div#produto, div#anuncio {
     margin: 40px 0px;
-    width: 170px;
+    width: 150px;
     height: 220px;
     background-color: lightblue;
     border-radius: 10px 10px 0px 0px;
@@ -127,7 +127,7 @@ main > section > div#produto, div#anuncio {
 
 main > section > div#produto > div {
     height: 180px;
-    width: 150px;
+    width: 130px;
     background-color: rgb(6, 80, 80);
     margin: 20px auto;
     margin-bottom: 10px;
