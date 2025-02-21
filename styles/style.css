@@ -131,6 +131,12 @@ main > section > div#produto > div {
     background-color: rgb(6, 80, 80);
     margin: 20px auto;
     margin-bottom: 10px;
+    display: grid;
+}
+
+main > section > div#produto > div > img {
+    max-width: 140px;
+    align-self: center;
 }
 
 main > section > div#produto > p {
