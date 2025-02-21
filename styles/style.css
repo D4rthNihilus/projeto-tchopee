@@ -95,7 +95,7 @@ nav {
 }
 
 nav > a {
-    color: white;
+    color: white; 
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
@@ -104,4 +104,46 @@ nav > a {
 
 nav > a:hover {
     background-color: #FFCB69;
+}
+
+main {
+    margin: 20px 30px;
+}
+
+main > section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main > section > div#produto, div#anuncio {
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    background-color: lightblue;
+}
+
+main > section > div#produto > div {
+    height: 210px;
+    width: 210px;
+    background-color: rgb(6, 80, 80);
+    margin: 20px auto;
+}
+
+main > section > div#produto > p {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(4, 53, 53);
+    color: white;
+}
+
+footer {
+    background-color: #FA9511;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer > p > a {
+    color: white;
 }
