@@ -17,6 +17,10 @@ amarelo escuro = #FA9511
 
 */
 
+body {
+    background-color: blanchedalmond;
+}
+
 header {
     background-image: linear-gradient(45deg, #FFCB69, #FFA200, #FA9511);
     color: white;
@@ -120,15 +124,13 @@ main > section > div#produto, div#anuncio {
     margin: 40px 0px;
     width: 160px;
     height: 220px;
-    background-color: lightblue;
+    background-color: white;
     border-radius: 10px 10px 0px 0px;
-
 }
 
 main > section > div#produto > div {
     height: 180px;
     width: 140px;
-    background-color: rgb(6, 80, 80);
     margin: 20px auto;
     margin-bottom: 10px;
     display: grid;
@@ -142,12 +144,15 @@ main > section > div#produto > div > img {
 main > section > div#produto > p {
     text-align: center;
     padding: 5px;
-    background-color: rgb(4, 53, 53);
+    height: 40px;
+    background-color: #FA9511;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
     color: white;
 }
 
 main > section > div#produto > p#preco {
     border-radius: 0px 0px 10px 10px;
+    font-weight: bolder;
 }
 
 footer {
