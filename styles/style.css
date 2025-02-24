@@ -114,65 +114,6 @@ main {
     margin: 0px 20px;
 }
 
-main > section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-main > section > div#produto {
-    margin: 10px 0px;
-    width: 160px;
-    height: 290px;
-    background-color: white;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-main > section > div#produto > div {
-    height: 180px;
-    width: 140px;
-    margin: 20px auto;
-    margin-bottom: 10px;
-    display: grid;
-}
-
-main > section > div#produto > div > img {
-    max-width: 140px;
-    align-self: center;
-}
-
-main > section > div#produto > p {
-    text-align: center;
-    padding: 5px;
-    height: 40px;
-    background-color: #FA9511;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
-    color: white;
-}
-
-main > section > div#produto > p#preco {
-    border-radius: 0px 0px 10px 10px;
-    font-weight: bolder;
-}
-
-main > section > div#anuncio {
-    width: 160px;
-    margin: 40px 0px;
-    display: grid;
-    align-content: center;
-}
-
-main > section > div#anuncio > a > img {
-    max-width: 160px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-}
-
-main > section > div#anuncio > a > img:hover {
-    border: 3px solid #FA9511;
-}
-
 footer {
     background-color: #FA9511;
     color: white;

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/trabcon.css">
+</head>
+<body>
+    <header id="header">
+        <div id="src">
+            <div id="srcicon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg>
+            </div>
+            <input type="search" name="srcbar" id="srcbar" placeholder="pesquisar">
+        </div>
+        <div id="logo">
+            <img src="images/logo2.png" alt="logo">
+        </div>
+        <h1>TCHOPEE</h1>
+    </header>
+    <nav>
+        <a href="index.html" target="_self">Home</a>
+        <a href="trabcon.html" target="_self">Trabalhe Conosco</a>
+        <a href="sobrenos.html" target="_self">Sobre Nós</a>
+        <a href="reclaqui.html" target="_self">Reclame Aqui</a>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Trabalhe Conosco</h1>
+            <div id="form">
+                <p>Preencha os dados abaixo para se candidatar a uma vaga em nossa empresa. </p>
+
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div>
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="phone">Telefone:</label>
+                            <input type="tel">
+                        </div>
+                        <div>
+                            <label for="adress">Endereço:</label>
+                            <input type="tel" name="" id="">
+                        </div>
+                        <div>
+                            <label for="matstatus">Estado Civil:</label>
+                            <br>
+                            <input type="radio" name="matstatus" id="">Solteiro(a)
+                            <br>
+                            <input type="radio" name="matstatus" id="">Da bagaceira
+                            <br>
+                            <input type="radio" name="matstatus" id="">
+                            Flertando
+                            <br>
+                            <input type="radio" name="matstatus" id="">
+                            Ficando
+                            <br>
+                            <input type="radio" name="matstatus" id="">
+                            Namorando
+                            <br>
+                            <input type="radio" name="matstatus" id="">
+                            Junto(a)
+                            <br>
+                            <input type="radio" name="matstatus" id="">
+                            Casado(a) no civil
+                            <br>
+                            <input type="radio" name="" id="">
+                            Casado(a) na Igreja
+                            <br>
+                            <input type="radio" name="" id="">
+                            Divorciado(a)
+                            <br>
+                            <input type="radio" name="" id="">
+                            Viúvo(a)
+                        </div>
+                        <div>
+                            <label for="child">Possui dependentes?</label>
+                            <input type="radio" name="child" id="yes">
+                            sim
+                            <input type="radio" name="child" id="no">
+                            não
+                            <input type="number" name="child" id="children" min="1" max="20">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dados Acadêmicos</legend>
+                        <div>
+                            <label for="school">Escolaridade:</label>
+                            <br>
+                            <input type="radio" name="school" id="efi1i">
+                            Ensino Fundamental 1 incompleto
+                            <br>
+                            <input type="radio" name="school" id="efi1c">
+                            Ensino Fundamental 1 completo
+                            <br>
+                            <input type="radio" name="school" id="efi2c">
+                            Ensino Fundamental 2 completo
+                            <br>
+                            <input type="radio" name="school" id="emc">
+                            Ensino Médio completo
+                            <br>
+                            <input type="radio" name="school" id="escu">
+                            Ensino Superior cursando
+                            <br>
+                            <input type="radio" name="school" id="esco">
+                            Ensino Superior completo
+                            <br>
+                        </div>
+
+                        <div>
+                            <label for="course">Cursos:</label>
+                            <br>
+                            Curso 1:
+                            <input type="text" name="" id="">
+                            <br>
+                            Curso 2:
+                            <input type="text" name="" id="">
+                            <br>
+                            Curso 3:
+                            <input type="text" name="" id="">
+                            <br>
+                            Curso 4:
+                            <input type="text" name="" id="">
+                            <br>
+                        </div>
+                        <div>
+                            <label for="lang">Idiomas:</label>
+                            <br>
+                            <input type="checkbox" name="lang" id="ing"> Inglês
+                            <input type="range" name="lang" id="engrang" max="3">
+                            <br>
+                            <input type="checkbox" name="lang" id="esp"> Espanhol
+                            <input type="range" name="lang" id="engrang" max="3">
+                            <br>
+                            <input type="checkbox" name="lang" id="jap"> Japonês
+                            <input type="range" name="lang" id="engrang" max="3">
+                            <br>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dados Profissionais</legend>
+                        <label for="role">Cargo Pretendido:</label>
+                        <br>
+                        <div>
+                            <input type="radio" name="role" id="delmoto">
+                            Assistente de E-commerce
+                            <br>
+                            <input type="radio" name="role" id="delmoto">
+                            Auxiliar administrativo
+                            <br>
+                            <input type="radio" name="role" id="delmoto">
+                            Atendente de vendas/SAC
+                            <label for="work">
+                            <br>
+                            <input type="radio" name="role" id="delmoto">
+                            Business intelligence
+                            <br>
+                            <input type="radio" name="role" id="delmoto">
+                            Coordenador(a) de mídias sociais
+                            <br>
+                            <input type="radio" name="role" id="delmoto">
+                            Entregador(a) de mercadorias
+                            <br>
+                            <input type="radio" name="role" id="delmoto">
+                            Operador(a) logístico(a)
+                            <br>
+                        </div>
+
+                        <label for="pretsal">Pretenção Salarial:</label>
+                        <input type="number" name="pretsal" id="pretsal" min="1000.00" maxlength="5000.00">
+                        
+                        <br>
+                        Experiência Profissional:</label>
+                        <div>
+                            Nome da empresa: <input type="text" name="work" id="company">
+                            <br>
+                            Salário base: <input type="number" name="work" id="salary">
+                            <br>
+                            Data de admissão:
+                            <input type="date" name="work" id="hire">
+                            <br>
+                            Data de demissão:
+                            <input type="date" name="work" id="fire">
+                        </div>
+                        <br>
+                        <div>
+                            Nome da empresa: <input type="text" name="work" id="company">
+                            <br>
+                            Salário base: <input type="number" name="work" id="salary">
+                            <br>
+                            Data de admissão:
+                            <input type="date" name="work" id="hire">
+                            <br>
+                            Data de demissão:
+                            <input type="date" name="work" id="fire">
+                        </div>
+                        <br>
+                        <div>
+                            Nome da empresa: <input type="text" name="work" id="company">
+                            <br>
+                            Salário base: <input type="number" name="work" id="salary">
+                            <br>
+                            Data de admissão:
+                            <input type="date" name="work" id="hire">
+                            <br>
+                            Data de demissão:
+                            <input type="date" name="work" id="fire">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>CV</legend>
+                        <label for="cv">Envie seu currículo:</label>
+                        <input type="file" name="cv" id="cv">
+                        <br>
+                        <label for="greetings">Faça uma breve apresentação sobre você: </label>
+                        <input type="text" name="greetings" id="greetings">
+                    </fieldset>
+
+                    <input type="submit" value="Enviar" id="submit">
+                    <input type="reset" value="Limpar" id="reset">
+                </form>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
