@@ -40,6 +40,7 @@ div#form > form > fieldset > div > label {
 div#form > form > fieldset > div > input {
     width: 70vw;
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 div#form > form > fieldset > div.special > input {
@@ -50,8 +51,11 @@ div#form > form > fieldset > div > input#pretsal, input#hire, input#fire {
     width: 100px !important;
 }
 
-div#form > form > fieldset > div > input#greetings {
-    height: 300px;
+div#form > form > fieldset > div#greetings > textarea {
+    max-height: 300px;
+    max-width: 280px;
+    padding: 10px;
+   
 }
 
 div#buttons {
