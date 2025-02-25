@@ -55,6 +55,7 @@ div#form > form > fieldset > div#greetings > textarea {
     max-height: 300px;
     max-width: 280px;
     padding: 10px;
+    margin: auto;
 }
 
 div#buttons {
