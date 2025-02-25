@@ -33,7 +33,7 @@
             <div id="form">
                 <p>Preencha os dados abaixo para se candidatar a uma vaga em nossa empresa. </p>
 
-                <form action="cadastro.php" method="post" autocomplete="on">
+                <form action="" method="post" autocomplete="on">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
                         <div>
@@ -104,14 +104,11 @@
                             <label for="school">Escolaridade:</label>
                             <br>
                             <br>
-                            <input type="radio" name="school" id="efi1i">
-                            Ensino Fundamental 1 incompleto
+                            <input type="radio" name="school" id="efi">
+                            Ensino Fundamental incompleto
                             <br>
-                            <input type="radio" name="school" id="efi1c">
-                            Ensino Fundamental 1 completo
-                            <br>
-                            <input type="radio" name="school" id="efi2c">
-                            Ensino Fundamental 2 completo
+                            <input type="radio" name="school" id="efc">
+                            Ensino Fundamental completo
                             <br>
                             <input type="radio" name="school" id="emc">
                             Ensino Médio completo
@@ -240,12 +237,12 @@
                             <label>Faça uma breve apresentação sobre você para que possamos conhecê-lo melhor: </label>
                             <br>
                             <br>
-                            <textarea rows="30" cols="35" placeholder="Digite aqui"></textarea>
+                            <textarea rows="50" cols="35" placeholder="Digite aqui"></textarea>
                         </div>
                     </fieldset>
 
                     <div id="buttons">
-                        <input type="submit" value="Enviar" id="submit">
+                        <input type="submit" value="Enviar" id="submit" onclick="enviar()">
                         <input type="reset" value="Limpar" id="reset">
                     </div>
                 </form>
@@ -256,5 +253,12 @@
     <footer>
         <p>&copy; <a href="https://github.com/D4rthNihilus">D4rthNihilus</a> Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function enviar() {
+            window.alert('Seu fomulário foi enviado com sucesso!')
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
