@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+img {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+legend {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px 0px;
+}
+
+main {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+main > section {
+    padding: 20px;
+}
+
+main > section > article {
+    margin-bottom: 30px;
+}
+
+main > section > article > h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main > section > article > h2 {
+    font-size: 1.2em;
+    color: #FA9511;
+}
+
+main > section > article > p {
+    text-indent: 30px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2em;
+    font-size: 0.8em;
+}
+
+main > section > article > p > a {
+    color: #b96d0a;
+    font-weight: bold;
+}
+
