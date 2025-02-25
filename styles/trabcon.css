@@ -1,2 +1,85 @@
 @charset "UTF-8";
 
+main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.116);
+}
+
+main > section > div#form > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div#form > form > fieldset {
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+div#form > form > fieldset > legend {
+    text-align: center;
+    padding: 10px 5px;
+    font-weight: bolder;
+}
+
+div#form > form > fieldset > div {
+    margin-bottom: 20px;
+}
+
+div#form > form > fieldset > div > label {
+    font-weight: bolder;
+}
+
+div#form > form > fieldset > div > input {
+    width: 70vw;
+    margin-bottom: 10px;
+}
+
+div#form > form > fieldset > div.special > input {
+    width: auto;
+}
+
+div#form > form > fieldset > div > input#pretsal, input#hire, input#fire {
+    width: 100px !important;
+}
+
+div#form > form > fieldset > div > input#greetings {
+    height: 300px;
+}
+
+div#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+div#buttons > input {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+div#buttons > input#submit {
+    background-color: green;
+}
+
+div#buttons > input#reset {
+    background-color: red;
+}
+
+div#buttons > input#submit:hover {
+    background-color:rgb(1, 44, 1);
+}
+
+div#buttons > input#reset:hover {
+    background-color:rgb(75, 2, 2);
+}
