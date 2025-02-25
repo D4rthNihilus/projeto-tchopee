@@ -52,11 +52,19 @@ div#form > form > fieldset > div > input#pretsal, input#hire, input#fire {
 }
 
 div#form > form > fieldset > div#greetings > textarea {
-    max-height: 300px;
+    max-height: 350px;
+    min-width: 280px;
     max-width: 280px;
     padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
     display: block;
     margin: auto;
+}
+
+textarea::placeholder {
+    color: black;
+    text-shadow: none;
 }
 
 div#buttons {
