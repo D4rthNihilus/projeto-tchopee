@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+main {
+    background-color: white;
+    margin: 10px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+main > section#complaints {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+main > section#complaints > div > h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main > section#complaints > div > p {
+    margin: 10px 0px;
+    font-size: 0.8em;
+}
+
+main > section#complaints > div > textarea {
+    padding: 10px;
+}
+
+main > section#complaints > div > input {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+main > section#complaints > div > input:hover {
+    background-color: rgb(1, 44, 1);
+}
+
+main > section > div {
+    margin: 20px;
+}
+
+main > section#comments {
+    background-color: cyan;
+}
+
+main > section#comments > div.comment > div.user {
+    display: flex;
+    align-items: center;
+}
+
+main > section#comments > div.comment > div.user > div.userinfo > h2 {
+    font-size: 1em;
+}
+
+main > section#comments > div.comment > div.user > div.userinfo > p {
+    font-size: 0.8em;
+    margin-top: 3px;
+    color: rgb(52, 52, 52);
+}
+
+main > section#comments > div.comment > div.user >  div.userpic img {
+    max-width: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+main > section#comments > div.comment > div.stars > span.star {
+    font-size: 1.2em;
+    color: #ffaf22;
+    margin: -2px;
+}
+
+main > section#comments > div.comment > div.stars > span#ratedate {
+    font-size: 0.8em;
+    color: rgb(52, 52, 52);
+}
+
+main > section#comments > div.comment > div.usercomments {
+
+    text-align: justify;
+    margin: 10px 0px;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
