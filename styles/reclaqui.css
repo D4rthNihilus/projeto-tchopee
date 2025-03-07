@@ -51,7 +51,7 @@ main > section#comments > div.comment > div.user {
 }
 
 main > section#comments > div.comment > div.user > div.userinfo > h2 {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 main > section#comments > div.comment > div.user > div.userinfo > p {
