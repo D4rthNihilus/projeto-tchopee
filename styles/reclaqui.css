@@ -3,11 +3,10 @@
 main {
     background-color: white;
     margin: 10px 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main > section#complaints {
-    padding: 20px 0px;
     text-align: center;
 }
 
@@ -25,6 +24,7 @@ main > section#complaints > div > textarea {
 }
 
 main > section#complaints > div > input {
+    margin: 10px 0px 40px 0px;
     padding: 10px 20px;
     background-color: green;
     color: white;
@@ -41,7 +41,8 @@ main > section > div {
 }
 
 main > section#comments {
-    background-color: cyan;
+    background-color: rgb(225, 230, 230);
+    padding: 20px 0px;
 }
 
 main > section#comments > div.comment > div.user {
@@ -83,4 +84,22 @@ main > section#comments > div.comment > div.usercomments {
     margin: 10px 0px;
     font-size: 0.8em;
     line-height: 1.5em;
+}
+
+main > section#comments > div.comment > div#icons {
+    display: flex;
+}
+
+main > section#comments > div.comment > div#icons > div {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+main > section#comments > div.comment > div#icons > div#like {
+    margin-right: 60px;
+}
+
+svg {
+    margin: 0px 10px;
 }
