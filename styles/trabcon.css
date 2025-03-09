@@ -37,6 +37,11 @@ div#form > form > fieldset > div > label {
     font-weight: bolder;
 }
 
+div#form > form > fieldset > div > label.xp {
+    text-align: center;
+    display: block;
+}
+
 div#form > form > fieldset > div > input {
     width: 70vw;
     margin-bottom: 10px;

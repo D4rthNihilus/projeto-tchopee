@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabalhe Conosco</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/trabcon.css">
 </head>
@@ -187,35 +187,40 @@
                             <label for="pretsal">Pretenção Salarial:</label>
                             <input type="number" name="pretsal" id="pretsal" min="1000.00" maxlength="5000.00">
                         </div>
-                        <div>
+                        <div class="experience">
                             <label>Experiência Profissional:</label>
                             <br>
                             <br>
-                            <label for="work">Nome da empresa:</label> <input type="text" name="work" id="company">
+                            <label for="work" class="xp">Nome da empresa:</label>
+                            <input type="text" name="work" id="company">
                             <br>
-                            <label for="salary">Salário base:</label> <input type="number" name="work" id="salary">
-                            <br>
-                            <label for="hire">Data de admissão:</label>
-                            <input type="date" name="work" id="hire">
-                            <br>
-                            <label for="fire">Data de demissão:</label>
-                            <input type="date" name="work" id="fire">
-                        </div>
-                        <div>
-                            <label for="work">Nome da empresa:</label> <input type="text" name="work" id="company">
-                            <br>
-                            <label for="salary">Salário base:</label> <input type="number" name="work" id="salary">
+                            <label for="salary" class="xp">Salário base:</label> <input type="number" name="work" id="salary">
                             <br>
                             <label for="hire">Data de admissão:</label>
                             <input type="date" name="work" id="hire">
                             <br>
                             <label for="fire">Data de demissão:</label>
                             <input type="date" name="work" id="fire">
+                            <hr>
                         </div>
                         <div>
-                            <label for="work">Nome da empresa:</label> <input type="text" name="work" id="company">
+                            <label for="work" class="xp">Nome da empresa:</label>
+                            <input type="text" name="work" id="company">
                             <br>
-                            <label for="salary">Salário base:</label> <input type="number" name="work" id="salary">
+                            <label for="salary" class="xp">Salário base:</label> <input type="number" name="work" id="salary">
+                            <br>
+                            <label for="hire">Data de admissão:</label>
+                            <input type="date" name="work" id="hire">
+                            <br>
+                            <label for="fire">Data de demissão:</label>
+                            <input type="date" name="work" id="fire">
+                            <hr>
+                        </div>
+                        <div>
+                            <label for="work" class="xp">Nome da empresa:</label>
+                            <input type="text" name="work" id="company">
+                            <br>
+                            <label for="salary" class="xp">Salário base:</label> <input type="number" name="work" id="salary">
                             <br>
                             <label for="hire">Data de admissão:</label>
                             <input type="date" name="work" id="hire">
@@ -257,7 +262,7 @@
     <script>
         function enviar() {
             window.alert('Seu fomulário foi enviado com sucesso!')
-            window.history.go(-1);
+            window.history.go(trabcon.html);
         }
     </script>
 </body>
