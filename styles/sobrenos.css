@@ -12,6 +12,14 @@ legend {
     padding: 5px 0px;
 }
 
+header {
+    padding-bottom: 14px;
+}
+
+header h1 {
+    margin-top: 3px;
+}
+
 main {
     background-color: white;
     margin-top: 10px;

@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-header > div#src > input#srcbar {
-    width: 280px;
+header > div#src > div#srcicon {
+    padding: 0px;
+    width: 35px;
 }
 
 main {
