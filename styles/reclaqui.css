@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+header > div#src > input#srcbar {
+    width: 280px;
+}
+
 main {
     background-color: white;
     margin: 10px 30px;
