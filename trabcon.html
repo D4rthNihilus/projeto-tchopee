@@ -51,43 +51,56 @@
                         
                         
                             <label for="adress">Endereço:</label>
-                            <input type="tel" name="" id="">
+                            <input type="text" name="adress" id="adress">
                         </div>
                         <div class="special">
                             <label for="matstatus">Estado Civil:</label>
                             <br>
                             <br>
-                            <input type="radio" name="matstatus" id="des">
-                            Desiludido(a)
+                            <input type="radio" name="matstatus" id="des" onclick="estadocivil()">
+                            <label for="matstatus">Desiludido(a)</label>
                             <br>
-                            <input type="radio" name="matstatus" id="solt"> Solteiro(a)
+                            <input type="radio" name="matstatus" id="solt" onclick="estadocivil()">
+                            <label for="matstatus">Solteiro(a)</label>
                             <br>
-                            <input type="radio" name="matstatus" id="bag"> Da bagaceira
+                            <input type="radio" name="matstatus" id="bag" onclick='estadocivil()'>
+                            <label for="matstatus">Da bagaceira</label>
                             <br>
-                            <input type="radio" name="matstatus" id="flert">
-                            Flertando
+                            <input type="radio" name="matstatus" id="flert" onclick="estadocivil()">
+                            <label for="matstatus">Flertando</label>
                             <br>
-                            <input type="radio" name="matstatus" id="fic">
-                            Ficando
+                            <input type="radio" name="matstatus" id="fic" onclick="estadocivil()">
+                            <label for="matstatus">Ficando</label>
                             <br>
                             <input type="radio" name="matstatus" id="nam">
-                            Namorando
+                            <label for="matstatus" onclick="estadocivil()">Namorando</label>
                             <br>
                             <input type="radio" name="matstatus" id="junt">
-                            Junto(a)
+                            <label for="matstatus" onclick="estadocivil()">Junto(a)</label>
                             <br>
                             <input type="radio" name="matstatus" id="casc">
-                            Casado(a) no civil
+                            <label for="matstatus" onclick="estadocivil()">Casado(a) no civil</label>
                             <br>
                             <input type="radio" name="matstatus" id="casi">
-                            Casado(a) na Igreja
+                            <label for="matstatus" onclick="estadocivil()">Casado(a) na Igreja</label>
                             <br>
                             <input type="radio" name="matstatus" id="div">
-                            Divorciado(a)
+                            <label for="matstatus" onclick="estadocivil()">Divorciado(a)</label>
                             <br>
                             <input type="radio" name="matstatus" id="viu">
-                            Viúvo(a)
+                            <label for="matstatus" onclick="estadocivil()">Viúvo(a)</label>
                         </div>
+
+                        <div id="qjp">
+                            <label for="qjpnb">Quantos(as) já pegou por aí?</label>
+                            <input type='number' name='qjpnb' id='qjpnb' min='1' max='200'>
+                        </div>
+
+                        <div id="qondd">
+                            <label for="qondd">Qual o nome do(a) danado(a)? </label>
+                            <input type="text" name="qond" id="qond">
+                        </div>
+
                         <br>
                         <div class="special" id="depend">
                             <label for="child">Possui dependentes?</label>
@@ -264,6 +277,38 @@
         function enviar() {
             window.alert('Seu fomulário foi enviado com sucesso!')
             window.history.go(trabcon.html);
+        }
+
+        function estadocivil() {
+            estciv = document.getElementsByName('matstatus')
+            qjp = document.querySelector('div#qjp')
+            qondd = document.querySelector('div#qondd')
+            aqten = document.querySelector('div#aqten')
+
+            if (estciv[0].checked) {
+                window.alert('Tadim! Um dia você ainda vai encontrar o grande amor da sua vida, tenha paciência, pois tudo acontecerá no momento certo!')
+            }
+
+            if (estciv[1].checked) {
+                window.confirm("Ninguém é solteiro em pleno 2025. Você está sendo solteiro(a) forçado(a), não é mesmo?")
+            }
+
+            if (estciv[2].checked) {
+                qjp.style.display = 'block'
+            } else {
+                    qjp.style.display = 'none'
+                  }
+
+            if (estciv[3].checked) {
+                qondd.style.display = 'block'
+            } else {
+                qondd.style.display = 'none'
+            }
+
+            if (estciv[4].checked) {
+                window.confirm('Já rolou algum beijo?  ( ͡° ͜ʖ ͡°)')
+                window.confirm('De língua?')
+            }
         }
     </script>
 </body>

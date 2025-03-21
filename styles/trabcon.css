@@ -101,3 +101,35 @@ div#buttons > input#submit:hover {
 div#buttons > input#reset:hover {
     background-color:rgb(75, 2, 2);
 }
+
+/*Quantos(as) já pegou por í?*/
+
+div#qjp {
+    display: none;
+}
+
+div#qjp > input {
+    max-width: 60px;
+}
+
+/*Qual o nome do(a) danado(a)?*/
+
+div#qondd {
+    display: none;
+}
+
+div#qondd > input {
+    margin-top: 10px;
+}
+
+
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
