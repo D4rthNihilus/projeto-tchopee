@@ -101,6 +101,11 @@
                             <input type="text" name="qond" id="qond">
                         </div>
 
+                        <div id="qadodn">
+                            <label for="dodn">Será que você ama ele(a) mesmo? Então qual a data oficial de namoro de vocês?</label>
+                            <input type="date" name="dodn" id="dodn">
+                        </div>
+
                         <br>
                         <div class="special" id="depend">
                             <label for="child">Possui dependentes?</label>
@@ -284,6 +289,7 @@
             qjp = document.querySelector('div#qjp')
             qondd = document.querySelector('div#qondd')
             aqten = document.querySelector('div#aqten')
+            qadodn = document.querySelector('div#qadodn')
 
             if (estciv[0].checked) {
                 window.alert('Tadim! Um dia você ainda vai encontrar o grande amor da sua vida, tenha paciência, pois tudo acontecerá no momento certo!')
@@ -308,6 +314,16 @@
             if (estciv[4].checked) {
                 window.confirm('Já rolou algum beijo?  ( ͡° ͜ʖ ͡°)')
                 window.confirm('De língua?')
+            }
+
+            else if (estciv[5].checked) {
+                qadodn.style.display = 'block'
+            } else {
+                qadodn.style.display = 'none'
+            }
+
+            if (estciv[6].checked) {
+                Window.alert('É feio!')
             }
         }
     </script>

@@ -112,17 +112,19 @@ div#qjp > input {
     max-width: 60px;
 }
 
-/*Qual o nome do(a) danado(a)?*/
-
-div#qondd {
+div#qondd, div#qadodn{
     display: none;
 }
 
-div#qondd > input {
+div#qondd > input, div#qadodn > input {
     margin-top: 10px;
 }
 
-
+div#qadodn > input {
+    max-width: 120px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 /**/
 /**/
