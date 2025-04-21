@@ -10,33 +10,182 @@ let c1txt = document.getElementById('c1txt')
 let c2txt = document.getElementById('c2txt')
 let c3txt = document.getElementById('c3txt')
 
+//Funções de avaliar
+
+let star = 0
+let nt1 = document.getElementById('nota1')
+let nt2 = document.getElementById('nota2')
+let nt3 = document.getElementById('nota3')
+let nt4 = document.getElementById('nota4')
+let nt5 = document.getElementById('nota5')
+
+function nota1(){
+    star = 1
+    nt1.innerHTML = '★'
+    nt2.innerHTML = '☆'
+    nt3.innerHTML = '☆'
+    nt4.innerHTML = '☆'
+    nt5.innerHTML = '☆'
+
+}
+
+function nota2(){
+    nota1()
+    star = 2
+    nt2.innerHTML = '★'
+    nt3.innerHTML = '☆'
+    nt4.innerHTML = '☆'
+    nt5.innerHTML = '☆'
+}
+
+function nota3(){
+    nota2()
+    star = 3
+    nt3.innerHTML = '★'
+    nt4.innerHTML = '☆'
+    nt5.innerHTML = '☆'
+}
+
+function nota4(){
+    nota3()
+    star = 4
+    nt4.innerHTML = '★'
+    nt5.innerHTML = '☆'
+}
+
+function nota5(){
+    nota4()
+    star = 5
+    nt5.innerHTML = '★'
+}
+
+
 function comment() {
-
-    if (next == 3) {
-        c3.style.display = 'block'
-        hr3.style.display = 'block'
-
-        c3txt.innerHTML = txt.value
-        next = 2
+    if (txt.value == '' || txt == 'undefined') {
+        window.alert('Digite seu comentário!')
     } else {
-        if (next == 2) {
-            c2.style.display = 'block'
-            hr2.style.display = 'block'
+        if (next == 3) {
 
-            c2txt.innerHTML = txt.value
-            next = 1
+            c3.style.display = 'block'
+            hr3.style.display = 'block'
+
+            c3txt.innerHTML = txt.value
+            next = 2
+
+            switch (star) {
+                case 1:
+                    c3st1.innerHTML = '★'
+                break
+                case 2:
+                    c3st1.innerHTML = '★'
+                    c3st2.innerHTML = '★'
+                break
+                case 3:
+                    c3st1.innerHTML = '★'
+                    c3st2.innerHTML = '★'
+                    c3st3.innerHTML = '★'
+                break
+                case 4:
+                    c3st1.innerHTML = '★'
+                    c3st2.innerHTML = '★'
+                    c3st3.innerHTML = '★'
+                    c3st4.innerHTML = '★'
+                break
+                case 5:
+                    c3st1.innerHTML = '★'
+                    c3st2.innerHTML = '★'
+                    c3st3.innerHTML = '★'
+                    c3st4.innerHTML = '★'
+                    c3st5.innerHTML = '★'
+                break
+            }
         } else {
-            if (next == 1) {
-                c1.style.display = 'block'
-                hr1.style.display = 'block'
 
-                c1txt.innerHTML = txt.value
-                next = 0
+            if (next == 2) {
+                c2.style.display = 'block'
+                hr2.style.display = 'block'
+
+                c2txt.innerHTML = txt.value
+                next = 1
+
+                switch (star) {
+                    case 1:
+                        c2st1.innerHTML = '★'
+                    break
+                    case 2:
+                        c2st1.innerHTML = '★'
+                        c2st2.innerHTML = '★'
+                    break
+                    case 3:
+                        c2st1.innerHTML = '★'
+                        c2st2.innerHTML = '★'
+                        c2st3.innerHTML = '★'
+                    break
+                    case 4:
+                        c2st1.innerHTML = '★'
+                        c2st2.innerHTML = '★'
+                        c2st3.innerHTML = '★'
+                        c2st4.innerHTML = '★'
+                    break
+                    case 5:
+                        c2st1.innerHTML = '★'
+                        c2st2.innerHTML = '★'
+                        c2st3.innerHTML = '★'
+                        c2st4.innerHTML = '★'
+                        c2st5.innerHTML = '★'
+                    break
+                }
+                
             } else {
-                window.alert('Você só pode enviar até 3 comentários')
+                if (next == 1) {
+                    c1.style.display = 'block'
+                    hr1.style.display = 'block'
+
+                    c1txt.innerHTML = txt.value
+                    next = 0
+
+                    switch (star) {
+                        case 1:
+                            c1st1.innerHTML = '★'
+                        break
+                        case 2:
+                            c1st1.innerHTML = '★'
+                            c1st2.innerHTML = '★'
+                        break
+                        case 3:
+                            c1st1.innerHTML = '★'
+                            c1st2.innerHTML = '★'
+                            c1st3.innerHTML = '★'
+                        break
+                        case 4:
+                            c1st1.innerHTML = '★'
+                            c1st2.innerHTML = '★'
+                            c1st3.innerHTML = '★'
+                            c1st4.innerHTML = '★'
+                        break
+                        case 5:
+                            c1st1.innerHTML = '★'
+                            c1st2.innerHTML = '★'
+                            c1st3.innerHTML = '★'
+                            c1st4.innerHTML = '★'
+                            c1st5.innerHTML = '★'
+                        break
+                    }
+
+                } else {
+                    window.alert('Você só pode enviar até 3 comentários')
+                }
             }
         }
-    }
 
-    txt.value = ''
-} 
+        txt.value = ''
+
+        nt1.innerHTML = '☆'
+        nt2.innerHTML = '☆'
+        nt3.innerHTML = '☆'
+        nt4.innerHTML = '☆'
+        nt5.innerHTML = '☆'
+
+        star = 0
+    }
+}

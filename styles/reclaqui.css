@@ -39,7 +39,7 @@ main > section#complaints > div > input {
 }
 
 span.nota {
-    font-size: 2.5em;
+    font-size: 3em;
     color: goldenrod
 }
 
@@ -78,7 +78,7 @@ main > section#comments > div.comment > div.user >  div.userpic img {
     margin-bottom: 0px;
 }
 
-main > section#comments > div.comment > div.stars > span.star {
+main > section#comments > div.comment > div.stars  span.star {
     font-size: 1.2em;
     color: #ffaf22;
     margin: -2px;
@@ -95,6 +95,10 @@ main > section#comments > div.comment > div.usercomments {
     margin: 10px 0px;
     font-size: 0.8em;
     line-height: 1.5em;
+}
+
+div#c1txt, div#c2txt, div#c3txt {
+    max-width: 300px;
 }
 
 main > section#comments > div.comment > div#icons {
