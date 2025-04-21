@@ -17,6 +17,7 @@ main > section#complaints {
 
 main > section#complaints > div > h1 {
     font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
 }
 
 main > section#complaints > div > p {
@@ -35,6 +36,11 @@ main > section#complaints > div > input {
     color: white;
     border: none;
     border-radius: 10px;
+}
+
+span.nota {
+    font-size: 2.5em;
+    color: goldenrod
 }
 
 main > section#complaints > div > input:hover {
@@ -103,6 +109,14 @@ main > section#comments > div.comment > div#icons > div {
 
 main > section#comments > div.comment > div#icons > div#like {
     margin-right: 60px;
+}
+
+div#com1, div#com2, div#com3 ,#uhr1, #uhr2, #uhr3 {
+    display: none;
+}
+
+hr.userhr {
+    margin-top: 20px;
 }
 
 svg {
