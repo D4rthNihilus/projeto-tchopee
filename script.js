@@ -19,19 +19,33 @@ let nt3 = document.getElementById('nota3')
 let nt4 = document.getElementById('nota4')
 let nt5 = document.getElementById('nota5')
 
-function nota1(){
-    star = 1
-    nt1.innerHTML = '★'
-    nt2.innerHTML = '☆'
-    nt3.innerHTML = '☆'
-    nt4.innerHTML = '☆'
-    nt5.innerHTML = '☆'
+let on = false
 
+function nota1(){
+    if (on == false) {
+        star = 1
+        nt1.innerHTML = '★'
+        nt2.innerHTML = '☆'
+        nt3.innerHTML = '☆'
+        nt4.innerHTML = '☆'
+        nt5.innerHTML = '☆'
+
+        on = true
+    } else {
+        star = 0
+        nt1.innerHTML = '☆'
+        nt2.innerHTML = '☆'
+        nt3.innerHTML = '☆'
+        nt4.innerHTML = '☆'
+        nt5.innerHTML = '☆'
+
+        on = false
+    }
 }
 
 function nota2(){
-    nota1()
     star = 2
+    nt1.innerHTML = '★'
     nt2.innerHTML = '★'
     nt3.innerHTML = '☆'
     nt4.innerHTML = '☆'
