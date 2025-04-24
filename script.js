@@ -9,6 +9,14 @@ let txt = document.getElementById('text')
 let c1txt = document.getElementById('c1txt')
 let c2txt = document.getElementById('c2txt')
 let c3txt = document.getElementById('c3txt')
+let user1 = document.getElementById('user1')
+let user2 = document.getElementById('user2')
+let user3 = document.getElementById('user3')
+let username = document.getElementById('username')
+let up1 = document.getElementById('up1')
+let up2 = document.getElementById('up2')
+let up3 = document.getElementById('up3')
+let photo = dosument.getElementById('userprof')
 
 //Funções de avaliar
 
@@ -82,7 +90,6 @@ function comment() {
 
             c3.style.display = 'block'
             hr3.style.display = 'block'
-
             c3txt.innerHTML = txt.value
             next = 2
 
@@ -118,7 +125,7 @@ function comment() {
             if (next == 2) {
                 c2.style.display = 'block'
                 hr2.style.display = 'block'
-
+                user2.innerHTML = username.value
                 c2txt.innerHTML = txt.value
                 next = 1
 
@@ -154,7 +161,7 @@ function comment() {
                 if (next == 1) {
                     c1.style.display = 'block'
                     hr1.style.display = 'block'
-
+                    user1.innerHTML = username.value
                     c1txt.innerHTML = txt.value
                     next = 0
 
@@ -193,6 +200,7 @@ function comment() {
         }
 
         txt.value = ''
+        username.value = ''
 
         nt1.innerHTML = '☆'
         nt2.innerHTML = '☆'

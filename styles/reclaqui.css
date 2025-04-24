@@ -123,6 +123,51 @@ hr.userhr {
     margin-top: 20px;
 }
 
+div#userdata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 15px auto;
+}
+
+div#userdata > input#username {
+    max-width: 200px;
+    height: 25px;
+    padding:4px;
+}
+
+div#userdata > input#username::placeholder {
+    color: grey;
+    font-style: normal;
+    text-shadow: none;
+}
+
+div#userdata > label {
+    display: grid;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+}
+
+div#userdata > label > img {
+    margin: auto;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+div#userdata > label > img:hover {
+    border: 2px solid rgba(85, 81, 81, 0.815);
+}
+
+div#userdata > input#userprof {
+    display: none;
+}
+
 svg {
     margin: 0px 10px;
 }
