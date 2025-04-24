@@ -13,10 +13,6 @@ let user1 = document.getElementById('user1')
 let user2 = document.getElementById('user2')
 let user3 = document.getElementById('user3')
 let username = document.getElementById('username')
-let up1 = document.getElementById('up1')
-let up2 = document.getElementById('up2')
-let up3 = document.getElementById('up3')
-let photo = dosument.getElementById('userprof')
 
 //Funções de avaliar
 
