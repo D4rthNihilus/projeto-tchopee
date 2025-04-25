@@ -13,6 +13,9 @@ let user1 = document.getElementById('user1')
 let user2 = document.getElementById('user2')
 let user3 = document.getElementById('user3')
 let username = document.getElementById('username')
+let tslt = false
+let ssscom = document.getElementById('ssscom')
+let ptslt = document.getElementById('trnslt')
 
 //Funções de avaliar
 
@@ -205,5 +208,17 @@ function comment() {
         nt5.innerHTML = '☆'
 
         star = 0
+    }
+}
+
+function translate() {
+    window.alert('Tudo OK')
+    if (tslt == false) {
+        ssscom.innerHTML = 'Olá, boa noite, Tchopee. Me chamo Sílvio, vim dos Estados Unidos para fazer uma reclamação. Minha filha de apenas 8 anos tem medo de aranhas. Peço que tirem a Matildes da loja. Obrigado pela atenção. Tenha uma boa tarde!'
+        tslt = true
+    } else {
+        ssscom.innerHTML = 'Hi, good evening Tchopee. My name is Silvio, I came from USA to make a complaint. My daughter, whos only 8 years old is afraid of spiders. I ask that you please remove Matildes from the store. Thanks for your attention. Have a great afternoon!'
+        ptslt.innerHTML = 'Mostar original'
+        tslt = false
     }
 }

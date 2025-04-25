@@ -84,6 +84,20 @@ main > section#comments > div.comment > div.stars  span.star {
     margin: -2px;
 }
 
+p#trslt {
+    margin: 15px auto;
+    text-align: center;
+    font-weight: bold;
+    color: #585552;
+}
+
+p#trslt:hover {
+    margin: 15px auto;
+    text-align: center;
+    font-weight: bold;
+    color: #e48613;
+}
+
 main > section#comments > div.comment > div.stars > span#ratedate {
     font-size: 0.8em;
     color: rgb(52, 52, 52);
